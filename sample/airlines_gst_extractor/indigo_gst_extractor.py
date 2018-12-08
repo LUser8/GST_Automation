@@ -21,16 +21,16 @@ class IndigoGSTInvoice:
     url_gst_invoice = "https://book.goindigo.in/Booking/GSTInvoice"
     airline_name = "Indigo"
 
-    def __init__(self, booking_reference_number):
-        self.booking_reference_number = booking_reference_number
+    def __init__(self, pnr):
+        self.pnr = pnr
         logging.info("Indigo_gst_extractor: IndigoGSTInvoice object created successfully for booking reference number "
-                     "{0}".format(self.booking_reference_number))
+                     "{0}".format(self.pnr))
         self.get_invoice_html()
         self.get_pdf_data()
 
     def get_invoice_html(self):
         logging.info("Indigo_gst_extractor: entering function get_invoice_html")
-        payload1 = {"indigoGSTDetails.PNR": self.booking_reference_number}
+        payload1 = {"indigoGSTDetails.PNR": self.pnr}
         try:
             logging.info("Indigo_gst_extractor: Inside function get_invoice_html fetching page1")
             # first post request with single form-data field
@@ -42,7 +42,7 @@ class IndigoGSTInvoice:
                 self.status = "wait"
                 print("GST Invoice is not Generated till now...")
                 logging.info("GST Invoice is not Generated till now for booking_reference_number:{0}".
-                             format(self.booking_reference_number))
+                             format(self.pnr))
                 return
             self.status = "success"
             # passing extracted page to beautiful soup for data extraction
@@ -123,7 +123,7 @@ class IndigoGSTInvoice:
         logging.info("Indigo_gst_extractor: entering function get_pdf_data")
         try:
             print("GST Invoice extracted successfully", "Getting PDF", sep='\n')
-            self.filename = "{0}_{1}.pdf".format(self.booking_reference_number, self.invoiceNumber)
+            self.filename = "{0}_{1}_{2}.pdf".format(IndigoGSTInvoice.airline_name, self.pnr, self.invoiceNumber)
             pdfkit.from_string(self.html_data, BASE_DIR+"/GST_PDF_DATA/"+self.filename)
             logging.info("Indigo_gst_extractor: existing function get_pdf_data successfully")
         except Exception as e:

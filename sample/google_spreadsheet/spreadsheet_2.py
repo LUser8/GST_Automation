@@ -136,7 +136,8 @@ def get_sheetData():
     global spreadsheet
     spreadsheet = df
     
-    selects = ['ID', ' Ticket No ', ' Airline/Hotel Name ', 'Email address', 'Fetched Flag', 'Last Checked']
+    selects = ['ID', ' Ticket No ', ' Airline/Hotel Name ', 'Email address', 'Fetched Flag', 'Last Checked',
+               " Origin City "]
     
     return df[(df['Fetched Flag'] == "N") | ((df['Fetched Flag'] == "W") & (pd.Series([delta.seconds//3600 for delta in (datetime.datetime.now() - df['Last Checked'])]) > 0))][selects]
     
