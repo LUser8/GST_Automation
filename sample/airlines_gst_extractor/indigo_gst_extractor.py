@@ -23,8 +23,8 @@ class IndigoGSTInvoice:
 
     def __init__(self, pnr):
         self.pnr = pnr
-        logging.info("Indigo_gst_extractor: IndigoGSTInvoice object created successfully for booking reference number "
-                     "{0}".format(self.pnr))
+        logging.info("Indigo_gst_extractor: IndigoGSTInvoice object created successfully for pnr {0}"
+                     .format(self.pnr))
         self.get_invoice_html()
         self.get_pdf_data()
 

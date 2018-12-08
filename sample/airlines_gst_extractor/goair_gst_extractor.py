@@ -26,13 +26,13 @@ class GoairGSTInvoice:
     def __init__(self, pnr, origin):
         self.pnr = pnr
         self.origin = origin
-        logging.info("Indigo_gst_extractor: IndigoGSTInvoice object created successfully for booking reference number "
-                     "{0}".format(self.pnr))
+        logging.info("Indigo_gst_extractor: IndigoGSTInvoice object created successfully for pnr {0} origin: {1}"
+                     .format(self.pnr, self.origin))
         self.get_invoice()
 
     def get_invoice(self):
         logging.info("goair_gst_extractor: entering function get_invoice")
-        payload1 = {"PNR": pnr, "Origin":origin}
+        payload1 = {"PNR": self.pnr, "Origin": self.origin}
         try:
             logging.info("goair_gst_extractor: Inside function get_invoice_html fetching page1")
             # first post request with single form-data field
@@ -46,7 +46,7 @@ class GoairGSTInvoice:
                 logging.info("GST Invoice is not Generated till now for booking_reference_number:{0}".
                              format(self.pnr))
                 return
-
+            logging.info("GST status success ")
             self.status = "success"
             data = page1.text
             data = data.replace("[", "")
@@ -54,10 +54,11 @@ class GoairGSTInvoice:
             data = json.loads(data)
 
             payload2 = {"invId": data["InvoiceKey"]}
-            r = requests.get(url2, params=payload2, timeout=60)
+            r = requests.get(GoairGSTInvoice.url_gst_invoice, params=payload2, timeout=60)
 
             self.invoiceNumber = data["InvoiceNumber"]
             self.filename = "{0}_{1}_{2}.pdf".format(GoairGSTInvoice.airline_name, self.pnr, self.invoiceNumber)
+            logging.info("storing {0} pdf file".format(self.filename))
             with open(BASE_DIR+"/GST_PDF_DATA/"+self.filename, 'wb') as f:
                 f.write(r.content)
 
