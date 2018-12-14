@@ -42,7 +42,7 @@ def extractor_selector(row):
     else:
         return None
 
-# For testing
+# For googlesheet api testing
 # set google api credential
 # spreadsheet_2.init_credentials(fromfile=BASE_DIR +"/sample/google_spreadsheet/credentials.json")
 # sheet_data = spreadsheet_2.get_sheetData()

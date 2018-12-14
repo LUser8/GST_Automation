@@ -76,6 +76,9 @@ class GoairGSTInvoice:
         except requests.exceptions.TooManyRedirects as e:
             logging.error("TooManyRedirects Error: {0}".format(e))
             print("Program stopped, please check the log file for more information")
+        except requests.ConnectionResetError:
+            logging.error("ConnectionResetError : {0}".format(e))
+            print("Program stopped, please check the log file for more information")
 
         # Beautiful Soup exceptions
         except bs.HTMLParser.HTMLParseError as e:

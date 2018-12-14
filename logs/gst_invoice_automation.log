@@ -1,248 +1,354 @@
-2018-12-08 16:40:58,648 GST Invoice Automation Started..
-2018-12-08 16:40:58,694 Starting new HTTPS connection (1): sheets.googleapis.com:443
-2018-12-08 16:40:59,659 https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1oQ4EOboX5z7AjyfHi2PivS7bh4tHUhZW8jeQJYmix70/values/Sample HTTP/1.1" 401 None
-2018-12-08 16:40:59,662 Refreshing access_token
-2018-12-08 16:40:59,889 Starting new HTTPS connection (1): sheets.googleapis.com:443
-2018-12-08 16:41:00,781 https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1oQ4EOboX5z7AjyfHi2PivS7bh4tHUhZW8jeQJYmix70/values/Sample HTTP/1.1" 401 None
-2018-12-08 16:41:00,786 Refreshing access_token
-2018-12-08 16:41:01,014 Starting new HTTPS connection (1): sheets.googleapis.com:443
-2018-12-08 16:41:02,000 https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1oQ4EOboX5z7AjyfHi2PivS7bh4tHUhZW8jeQJYmix70/values/Sample HTTP/1.1" 200 None
-2018-12-08 16:41:02,027 Indigo_gst_extractor: IndigoGSTInvoice object created successfully for pnr UCCZ3C
-2018-12-08 16:41:02,027 Indigo_gst_extractor: entering function get_invoice_html
-2018-12-08 16:41:02,027 Indigo_gst_extractor: Inside function get_invoice_html fetching page1
-2018-12-08 16:41:02,161 Starting new HTTPS connection (1): book.goindigo.in:443
-2018-12-08 16:41:09,284 https://book.goindigo.in:443 "POST /Booking/GSTInvoiceDetails HTTP/1.1" 200 63249
-2018-12-08 16:41:11,098 Indigo_gst_extractor: Inside function get_invoice_html fetched page1 successful
-2018-12-08 16:41:11,098 Indigo_gst_extractor: starting parsing with bs4 page1
-2018-12-08 16:41:11,249 Indigo_gst_extractor: parsing page1 completed
-2018-12-08 16:41:11,250 Indigo_gst_extractor: finding id 'GSTInvoiceForm' 
-2018-12-08 16:41:11,260 Indigo_gst_extractor: found id 'GSTInvoiceForm' successful 
-2018-12-08 16:41:11,261 Indigo_gst_extractor: extracted request token:n0FiNm32NRdeY9I1k-TxFDEinajA-5HC-92Gr4_hEwaw5VO45LDgOIA3LOltqXg0KjvMrFwU4N2hky4cyyWUnEm2RUeqG1gS0EJUwT8FowcVBRRf2NVzxjFMmhjrPAJBlWtX7w2
-2018-12-08 16:41:11,275 Indigo_gst_extractor: extracted invoice Number:KA1181909BA72616
-2018-12-08 16:41:11,275 Indigo_gst_extractor: Inside function get_invoice_html fetching page2
-2018-12-08 16:41:11,278 Starting new HTTPS connection (1): book.goindigo.in:443
-2018-12-08 16:41:13,972 https://book.goindigo.in:443 "POST /Booking/GSTInvoice HTTP/1.1" 200 20203
-2018-12-08 16:41:13,976 Indigo_gst_extractor: Inside function get_invoice_html fetched page2 successful
-2018-12-08 16:41:13,976 Indigo_gst_extractor: starting parsing with bs4 page2
-2018-12-08 16:41:14,039 Indigo_gst_extractor: starting parsing page2 is completed
-2018-12-08 16:41:14,044 Indigo_gst_extractor: existing function get_invoice_html successfully
-2018-12-08 16:41:14,044 Indigo_gst_extractor: entering function get_pdf_data
-2018-12-08 16:41:19,137 Indigo_gst_extractor: existing function get_pdf_data successfully
-2018-12-08 16:41:19,138 status for Ticket No 6E-UCCZ3C is success
-2018-12-08 16:41:19,138 Sending Email process started
-2018-12-08 16:41:19,138 SendInvoiceEmail: Createing object
-2018-12-08 16:41:19,139 SendInvoiceEmail: object created success
-2018-12-08 16:41:19,139 SendInvoiceEmail: Enter in function send_mail for Airline: Indigo, GSTInvoice Number:KA1181909BA72616, PNR:UCCZ3C.
-2018-12-08 16:41:21,366 Sending Email at address: desktop@hyberit.com
-2018-12-08 16:41:23,526 Email sent successfully
-2018-12-08 16:41:23,748 SendInvoiceEmail: Exiting from function send_mail
-2018-12-08 16:41:23,752 Starting new HTTPS connection (1): sheets.googleapis.com:443
-2018-12-08 16:41:24,761 https://sheets.googleapis.com:443 "PUT /v4/spreadsheets/1oQ4EOboX5z7AjyfHi2PivS7bh4tHUhZW8jeQJYmix70/values/BB2?valueInputOption=USER_ENTERED HTTP/1.1" 200 None
-2018-12-08 16:41:24,769 Starting new HTTPS connection (1): sheets.googleapis.com:443
-2018-12-08 16:41:25,772 https://sheets.googleapis.com:443 "PUT /v4/spreadsheets/1oQ4EOboX5z7AjyfHi2PivS7bh4tHUhZW8jeQJYmix70/values/BC2?valueInputOption=USER_ENTERED HTTP/1.1" 200 None
-2018-12-08 16:41:25,775 -----------------------------****----------------------------
-2018-12-08 16:41:25,776 Indigo_gst_extractor: IndigoGSTInvoice object created successfully for pnr LK6H7H
-2018-12-08 16:41:25,776 Indigo_gst_extractor: entering function get_invoice_html
-2018-12-08 16:41:25,776 Indigo_gst_extractor: Inside function get_invoice_html fetching page1
-2018-12-08 16:41:25,779 Starting new HTTPS connection (1): book.goindigo.in:443
-2018-12-08 16:41:32,325 https://book.goindigo.in:443 "POST /Booking/GSTInvoiceDetails HTTP/1.1" 200 63164
-2018-12-08 16:41:33,559 Indigo_gst_extractor: Inside function get_invoice_html fetched page1 successful
-2018-12-08 16:41:33,560 Indigo_gst_extractor: starting parsing with bs4 page1
-2018-12-08 16:41:33,703 Indigo_gst_extractor: parsing page1 completed
-2018-12-08 16:41:33,704 Indigo_gst_extractor: finding id 'GSTInvoiceForm' 
-2018-12-08 16:41:33,714 Indigo_gst_extractor: found id 'GSTInvoiceForm' successful 
-2018-12-08 16:41:33,715 Indigo_gst_extractor: extracted request token:p__0OEEqheLLwzlHtIQIeRCB2zzFT_ZEEHkg5Jho0oYS15KiOcA5Jh-VKWWgHh1NPo8OJOmxrqQkuAMTzGbrm048F9Na57L1jCaO3OvkQBMsn2KfjFCnqev8LbIFyJQgkN9fFQ2
-2018-12-08 16:41:33,729 Indigo_gst_extractor: extracted invoice Number:GJ1181909AI66999
-2018-12-08 16:41:33,729 Indigo_gst_extractor: Inside function get_invoice_html fetching page2
-2018-12-08 16:41:33,732 Starting new HTTPS connection (1): book.goindigo.in:443
-2018-12-08 16:41:36,043 https://book.goindigo.in:443 "POST /Booking/GSTInvoice HTTP/1.1" 200 20242
-2018-12-08 16:41:36,263 Indigo_gst_extractor: Inside function get_invoice_html fetched page2 successful
-2018-12-08 16:41:36,264 Indigo_gst_extractor: starting parsing with bs4 page2
-2018-12-08 16:41:36,330 Indigo_gst_extractor: starting parsing page2 is completed
-2018-12-08 16:41:36,336 Indigo_gst_extractor: existing function get_invoice_html successfully
-2018-12-08 16:41:36,336 Indigo_gst_extractor: entering function get_pdf_data
-2018-12-08 16:41:40,425 Indigo_gst_extractor: existing function get_pdf_data successfully
-2018-12-08 16:41:40,426 status for Ticket No 6E-LK6H7H is success
-2018-12-08 16:41:40,427 Sending Email process started
-2018-12-08 16:41:40,427 SendInvoiceEmail: Createing object
-2018-12-08 16:41:40,427 SendInvoiceEmail: object created success
-2018-12-08 16:41:40,427 SendInvoiceEmail: Enter in function send_mail for Airline: Indigo, GSTInvoice Number:GJ1181909AI66999, PNR:LK6H7H.
-2018-12-08 16:41:42,326 Sending Email at address: desktop@hyberit.com
-2018-12-08 16:41:44,506 Email sent successfully
-2018-12-08 16:41:44,733 SendInvoiceEmail: Exiting from function send_mail
-2018-12-08 16:41:44,737 Starting new HTTPS connection (1): sheets.googleapis.com:443
-2018-12-08 16:41:45,752 https://sheets.googleapis.com:443 "PUT /v4/spreadsheets/1oQ4EOboX5z7AjyfHi2PivS7bh4tHUhZW8jeQJYmix70/values/BB6?valueInputOption=USER_ENTERED HTTP/1.1" 200 None
-2018-12-08 16:41:45,757 Starting new HTTPS connection (1): sheets.googleapis.com:443
-2018-12-08 16:41:46,759 https://sheets.googleapis.com:443 "PUT /v4/spreadsheets/1oQ4EOboX5z7AjyfHi2PivS7bh4tHUhZW8jeQJYmix70/values/BC6?valueInputOption=USER_ENTERED HTTP/1.1" 200 None
-2018-12-08 16:41:46,765 -----------------------------****----------------------------
-2018-12-08 16:41:46,765 Indigo_gst_extractor: IndigoGSTInvoice object created successfully for pnr XF6H5J
-2018-12-08 16:41:46,766 Indigo_gst_extractor: entering function get_invoice_html
-2018-12-08 16:41:46,766 Indigo_gst_extractor: Inside function get_invoice_html fetching page1
-2018-12-08 16:41:46,768 Starting new HTTPS connection (1): book.goindigo.in:443
-2018-12-08 16:41:54,465 https://book.goindigo.in:443 "POST /Booking/GSTInvoiceDetails HTTP/1.1" 200 63038
-2018-12-08 16:41:56,900 Indigo_gst_extractor: Inside function get_invoice_html fetched page1 successful
-2018-12-08 16:41:56,901 Indigo_gst_extractor: starting parsing with bs4 page1
-2018-12-08 16:41:57,074 Indigo_gst_extractor: parsing page1 completed
-2018-12-08 16:41:57,074 Indigo_gst_extractor: finding id 'GSTInvoiceForm' 
-2018-12-08 16:41:57,084 Indigo_gst_extractor: found id 'GSTInvoiceForm' successful 
-2018-12-08 16:41:57,085 Indigo_gst_extractor: extracted request token:thjns_eH-5jv78qGosbyL84nmDh-ZjTMg8slgGFukEtV2US91Js3TophBmucoCvBCSK3OjuoAUkr1LFHsjW8v1rAUWwqzEk-kXBp2S97k9YIpSQA9lCH8hTzZZsLYuUTmSj8wg2
-2018-12-08 16:41:57,101 Indigo_gst_extractor: extracted invoice Number:GJ1181909AI70336
-2018-12-08 16:41:57,101 Indigo_gst_extractor: Inside function get_invoice_html fetching page2
-2018-12-08 16:41:57,103 Starting new HTTPS connection (1): book.goindigo.in:443
-2018-12-08 16:41:59,979 https://book.goindigo.in:443 "POST /Booking/GSTInvoice HTTP/1.1" 200 20245
-2018-12-08 16:42:00,236 Indigo_gst_extractor: Inside function get_invoice_html fetched page2 successful
-2018-12-08 16:42:00,236 Indigo_gst_extractor: starting parsing with bs4 page2
-2018-12-08 16:42:00,294 Indigo_gst_extractor: starting parsing page2 is completed
-2018-12-08 16:42:00,300 Indigo_gst_extractor: existing function get_invoice_html successfully
-2018-12-08 16:42:00,300 Indigo_gst_extractor: entering function get_pdf_data
-2018-12-08 16:42:04,156 Indigo_gst_extractor: existing function get_pdf_data successfully
-2018-12-08 16:42:04,157 status for Ticket No 6E-XF6H5J is success
-2018-12-08 16:42:04,158 Sending Email process started
-2018-12-08 16:42:04,158 SendInvoiceEmail: Createing object
-2018-12-08 16:42:04,158 SendInvoiceEmail: object created success
-2018-12-08 16:42:04,158 SendInvoiceEmail: Enter in function send_mail for Airline: Indigo, GSTInvoice Number:GJ1181909AI70336, PNR:XF6H5J.
-2018-12-08 16:42:06,424 Sending Email at address: desktop@hyberit.com
-2018-12-08 16:42:08,574 Email sent successfully
-2018-12-08 16:42:08,794 SendInvoiceEmail: Exiting from function send_mail
-2018-12-08 16:42:08,798 Starting new HTTPS connection (1): sheets.googleapis.com:443
-2018-12-08 16:42:09,802 https://sheets.googleapis.com:443 "PUT /v4/spreadsheets/1oQ4EOboX5z7AjyfHi2PivS7bh4tHUhZW8jeQJYmix70/values/BB7?valueInputOption=USER_ENTERED HTTP/1.1" 200 None
-2018-12-08 16:42:09,808 Starting new HTTPS connection (1): sheets.googleapis.com:443
-2018-12-08 16:42:10,700 https://sheets.googleapis.com:443 "PUT /v4/spreadsheets/1oQ4EOboX5z7AjyfHi2PivS7bh4tHUhZW8jeQJYmix70/values/BC7?valueInputOption=USER_ENTERED HTTP/1.1" 200 None
-2018-12-08 16:42:10,703 -----------------------------****----------------------------
-2018-12-08 16:42:10,704 Indigo_gst_extractor: IndigoGSTInvoice object created successfully for pnr VYEDKL
-2018-12-08 16:42:10,704 Indigo_gst_extractor: entering function get_invoice_html
-2018-12-08 16:42:10,705 Indigo_gst_extractor: Inside function get_invoice_html fetching page1
-2018-12-08 16:42:10,707 Starting new HTTPS connection (1): book.goindigo.in:443
-2018-12-08 16:42:17,586 https://book.goindigo.in:443 "POST /Booking/GSTInvoiceDetails HTTP/1.1" 200 63189
-2018-12-08 16:42:18,835 Indigo_gst_extractor: Inside function get_invoice_html fetched page1 successful
-2018-12-08 16:42:18,835 Indigo_gst_extractor: starting parsing with bs4 page1
-2018-12-08 16:42:18,978 Indigo_gst_extractor: parsing page1 completed
-2018-12-08 16:42:18,978 Indigo_gst_extractor: finding id 'GSTInvoiceForm' 
-2018-12-08 16:42:18,988 Indigo_gst_extractor: found id 'GSTInvoiceForm' successful 
-2018-12-08 16:42:18,989 Indigo_gst_extractor: extracted request token:zRGpFDmB8_tuYbybjI0wF3gfbpk8rSkLpXFM00Hf3oivowvkwBBKU6t1TXCeXVvDGF-84ub2LGnHCD_JW091ptRLOr76aEAGSmdagrB6BN6REg4sSufCnpLtPUloRSr0PXBLAw2
-2018-12-08 16:42:19,004 Indigo_gst_extractor: extracted invoice Number:GJ1181910AK16094
-2018-12-08 16:42:19,004 Indigo_gst_extractor: Inside function get_invoice_html fetching page2
-2018-12-08 16:42:19,007 Starting new HTTPS connection (1): book.goindigo.in:443
-2018-12-08 16:42:23,426 https://book.goindigo.in:443 "POST /Booking/GSTInvoice HTTP/1.1" 200 20164
-2018-12-08 16:42:23,829 Indigo_gst_extractor: Inside function get_invoice_html fetched page2 successful
-2018-12-08 16:42:23,829 Indigo_gst_extractor: starting parsing with bs4 page2
-2018-12-08 16:42:23,892 Indigo_gst_extractor: starting parsing page2 is completed
-2018-12-08 16:42:23,897 Indigo_gst_extractor: existing function get_invoice_html successfully
-2018-12-08 16:42:23,897 Indigo_gst_extractor: entering function get_pdf_data
-2018-12-08 16:42:27,520 Indigo_gst_extractor: existing function get_pdf_data successfully
-2018-12-08 16:42:27,521 status for Ticket No 6E-VYEDKL is success
-2018-12-08 16:42:27,521 Sending Email process started
-2018-12-08 16:42:27,521 SendInvoiceEmail: Createing object
-2018-12-08 16:42:27,521 SendInvoiceEmail: object created success
-2018-12-08 16:42:27,522 SendInvoiceEmail: Enter in function send_mail for Airline: Indigo, GSTInvoice Number:GJ1181910AK16094, PNR:VYEDKL.
-2018-12-08 16:42:29,102 Sending Email at address: desktop@hyberit.com
-2018-12-08 16:42:31,405 Email sent successfully
-2018-12-08 16:42:31,626 SendInvoiceEmail: Exiting from function send_mail
-2018-12-08 16:42:31,630 Starting new HTTPS connection (1): sheets.googleapis.com:443
-2018-12-08 16:42:32,642 https://sheets.googleapis.com:443 "PUT /v4/spreadsheets/1oQ4EOboX5z7AjyfHi2PivS7bh4tHUhZW8jeQJYmix70/values/BB9?valueInputOption=USER_ENTERED HTTP/1.1" 200 None
-2018-12-08 16:42:32,649 Starting new HTTPS connection (1): sheets.googleapis.com:443
-2018-12-08 16:42:33,666 https://sheets.googleapis.com:443 "PUT /v4/spreadsheets/1oQ4EOboX5z7AjyfHi2PivS7bh4tHUhZW8jeQJYmix70/values/BC9?valueInputOption=USER_ENTERED HTTP/1.1" 200 None
-2018-12-08 16:42:33,669 -----------------------------****----------------------------
-2018-12-08 16:42:33,669 Indigo_gst_extractor: IndigoGSTInvoice object created successfully for pnr VYEDKL
-2018-12-08 16:42:33,669 Indigo_gst_extractor: entering function get_invoice_html
-2018-12-08 16:42:33,670 Indigo_gst_extractor: Inside function get_invoice_html fetching page1
-2018-12-08 16:42:33,672 Starting new HTTPS connection (1): book.goindigo.in:443
-2018-12-08 16:42:40,424 https://book.goindigo.in:443 "POST /Booking/GSTInvoiceDetails HTTP/1.1" 200 63284
-2018-12-08 16:42:41,978 Indigo_gst_extractor: Inside function get_invoice_html fetched page1 successful
-2018-12-08 16:42:41,978 Indigo_gst_extractor: starting parsing with bs4 page1
-2018-12-08 16:42:42,123 Indigo_gst_extractor: parsing page1 completed
-2018-12-08 16:42:42,123 Indigo_gst_extractor: finding id 'GSTInvoiceForm' 
-2018-12-08 16:42:42,134 Indigo_gst_extractor: found id 'GSTInvoiceForm' successful 
-2018-12-08 16:42:42,135 Indigo_gst_extractor: extracted request token:7Fy4r0F7oTh-Rc6q74kKIrd5X64byjYvRPhqs5yygX2fCoyG7f95G4Hw3Ye0AmOFdUFqnIwI8sE-ZTyoIuaotfEL3pdM15kGmtjveD9In160CiwmONHyKZG4yHKsJhtqAvzmvw2
-2018-12-08 16:42:42,150 Indigo_gst_extractor: extracted invoice Number:GJ1181910AK16094
-2018-12-08 16:42:42,150 Indigo_gst_extractor: Inside function get_invoice_html fetching page2
-2018-12-08 16:42:42,152 Starting new HTTPS connection (1): book.goindigo.in:443
-2018-12-08 16:42:46,910 https://book.goindigo.in:443 "POST /Booking/GSTInvoice HTTP/1.1" 200 20166
-2018-12-08 16:42:47,178 Indigo_gst_extractor: Inside function get_invoice_html fetched page2 successful
-2018-12-08 16:42:47,178 Indigo_gst_extractor: starting parsing with bs4 page2
-2018-12-08 16:42:47,240 Indigo_gst_extractor: starting parsing page2 is completed
-2018-12-08 16:42:47,244 Indigo_gst_extractor: existing function get_invoice_html successfully
-2018-12-08 16:42:47,245 Indigo_gst_extractor: entering function get_pdf_data
-2018-12-08 16:42:52,295 Indigo_gst_extractor: existing function get_pdf_data successfully
-2018-12-08 16:42:52,296 status for Ticket No 6E-VYEDKL is success
-2018-12-08 16:42:52,296 Sending Email process started
-2018-12-08 16:42:52,296 SendInvoiceEmail: Createing object
-2018-12-08 16:42:52,297 SendInvoiceEmail: object created success
-2018-12-08 16:42:52,297 SendInvoiceEmail: Enter in function send_mail for Airline: Indigo, GSTInvoice Number:GJ1181910AK16094, PNR:VYEDKL.
-2018-12-08 16:42:53,921 Sending Email at address: desktop@hyberit.com
-2018-12-08 16:42:56,196 Email sent successfully
-2018-12-08 16:42:56,427 SendInvoiceEmail: Exiting from function send_mail
-2018-12-08 16:42:56,431 Starting new HTTPS connection (1): sheets.googleapis.com:443
-2018-12-08 16:42:57,415 https://sheets.googleapis.com:443 "PUT /v4/spreadsheets/1oQ4EOboX5z7AjyfHi2PivS7bh4tHUhZW8jeQJYmix70/values/BB10?valueInputOption=USER_ENTERED HTTP/1.1" 200 None
-2018-12-08 16:42:57,422 Starting new HTTPS connection (1): sheets.googleapis.com:443
-2018-12-08 16:42:58,342 https://sheets.googleapis.com:443 "PUT /v4/spreadsheets/1oQ4EOboX5z7AjyfHi2PivS7bh4tHUhZW8jeQJYmix70/values/BC10?valueInputOption=USER_ENTERED HTTP/1.1" 200 None
-2018-12-08 16:42:58,345 -----------------------------****----------------------------
-2018-12-08 16:42:58,346 Indigo_gst_extractor: IndigoGSTInvoice object created successfully for pnr Q6TBFF
-2018-12-08 16:42:58,346 Indigo_gst_extractor: entering function get_invoice_html
-2018-12-08 16:42:58,346 Indigo_gst_extractor: Inside function get_invoice_html fetching page1
-2018-12-08 16:42:58,350 Starting new HTTPS connection (1): book.goindigo.in:443
-2018-12-08 16:43:05,711 https://book.goindigo.in:443 "POST /Booking/GSTInvoiceDetails HTTP/1.1" 200 62792
-2018-12-08 16:43:07,091 Indigo_gst_extractor: Inside function get_invoice_html fetched page1 successful
-2018-12-08 16:43:07,092 GST Invoice is not Generated till now for booking_reference_number:Q6TBFF
-2018-12-08 16:43:07,092 status for Ticket No SG-Q6TBFF is waiting
-2018-12-08 16:43:07,095 Starting new HTTPS connection (1): sheets.googleapis.com:443
-2018-12-08 16:43:08,065 https://sheets.googleapis.com:443 "PUT /v4/spreadsheets/1oQ4EOboX5z7AjyfHi2PivS7bh4tHUhZW8jeQJYmix70/values/BB12?valueInputOption=USER_ENTERED HTTP/1.1" 200 None
-2018-12-08 16:43:08,095 Starting new HTTPS connection (1): sheets.googleapis.com:443
-2018-12-08 16:43:09,539 https://sheets.googleapis.com:443 "PUT /v4/spreadsheets/1oQ4EOboX5z7AjyfHi2PivS7bh4tHUhZW8jeQJYmix70/values/BC12?valueInputOption=USER_ENTERED HTTP/1.1" 200 None
-2018-12-08 16:43:09,561 -----------------------------****----------------------------
-2018-12-08 16:43:09,562 Indigo_gst_extractor: IndigoGSTInvoice object created successfully for pnr Q6TBFF
-2018-12-08 16:43:09,562 Indigo_gst_extractor: entering function get_invoice_html
-2018-12-08 16:43:09,562 Indigo_gst_extractor: Inside function get_invoice_html fetching page1
-2018-12-08 16:43:09,565 Starting new HTTPS connection (1): book.goindigo.in:443
-2018-12-08 16:43:19,153 https://book.goindigo.in:443 "POST /Booking/GSTInvoiceDetails HTTP/1.1" 200 62706
-2018-12-08 16:43:23,122 Indigo_gst_extractor: Inside function get_invoice_html fetched page1 successful
-2018-12-08 16:43:23,122 GST Invoice is not Generated till now for booking_reference_number:Q6TBFF
-2018-12-08 16:43:23,122 status for Ticket No SG-Q6TBFF is waiting
-2018-12-08 16:43:23,126 Starting new HTTPS connection (1): sheets.googleapis.com:443
-2018-12-08 16:43:24,144 https://sheets.googleapis.com:443 "PUT /v4/spreadsheets/1oQ4EOboX5z7AjyfHi2PivS7bh4tHUhZW8jeQJYmix70/values/BB13?valueInputOption=USER_ENTERED HTTP/1.1" 200 None
-2018-12-08 16:43:24,154 Starting new HTTPS connection (1): sheets.googleapis.com:443
-2018-12-08 16:43:25,906 https://sheets.googleapis.com:443 "PUT /v4/spreadsheets/1oQ4EOboX5z7AjyfHi2PivS7bh4tHUhZW8jeQJYmix70/values/BC13?valueInputOption=USER_ENTERED HTTP/1.1" 200 None
-2018-12-08 16:43:25,908 -----------------------------****----------------------------
-2018-12-08 16:43:25,909 Indigo_gst_extractor: IndigoGSTInvoice object created successfully for pnr HBMSJS
-2018-12-08 16:43:25,909 Indigo_gst_extractor: entering function get_invoice_html
-2018-12-08 16:43:25,909 Indigo_gst_extractor: Inside function get_invoice_html fetching page1
-2018-12-08 16:43:25,911 Starting new HTTPS connection (1): book.goindigo.in:443
-2018-12-08 16:43:33,876 https://book.goindigo.in:443 "POST /Booking/GSTInvoiceDetails HTTP/1.1" 200 63039
-2018-12-08 16:43:36,287 Indigo_gst_extractor: Inside function get_invoice_html fetched page1 successful
-2018-12-08 16:43:36,287 Indigo_gst_extractor: starting parsing with bs4 page1
-2018-12-08 16:43:36,433 Indigo_gst_extractor: parsing page1 completed
-2018-12-08 16:43:36,433 Indigo_gst_extractor: finding id 'GSTInvoiceForm' 
-2018-12-08 16:43:36,446 Indigo_gst_extractor: found id 'GSTInvoiceForm' successful 
-2018-12-08 16:43:36,447 Indigo_gst_extractor: extracted request token:5QR0cCX9rCiRveEtJKHJUynx8o-9z6Iq1eFgqZxjG3pYWzsOkM5JqV5n63WP1zSqj3_ekda4jlOv6shB8hA5Kmn5rmc42AlZYs2K8A4ludyMdRtwH58X9YYNwfZdP2JE4T0x_g2
-2018-12-08 16:43:36,463 Indigo_gst_extractor: extracted invoice Number:OR1181909AE29842
-2018-12-08 16:43:36,463 Indigo_gst_extractor: Inside function get_invoice_html fetching page2
-2018-12-08 16:43:36,466 Starting new HTTPS connection (1): book.goindigo.in:443
-2018-12-08 16:43:39,255 https://book.goindigo.in:443 "POST /Booking/GSTInvoice HTTP/1.1" 200 20353
-2018-12-08 16:43:39,619 Indigo_gst_extractor: Inside function get_invoice_html fetched page2 successful
-2018-12-08 16:43:39,619 Indigo_gst_extractor: starting parsing with bs4 page2
-2018-12-08 16:43:39,689 Indigo_gst_extractor: starting parsing page2 is completed
-2018-12-08 16:43:39,695 Indigo_gst_extractor: existing function get_invoice_html successfully
-2018-12-08 16:43:39,696 Indigo_gst_extractor: entering function get_pdf_data
-2018-12-08 16:43:43,685 Indigo_gst_extractor: existing function get_pdf_data successfully
-2018-12-08 16:43:43,686 status for Ticket No 6E-HBMSJS is success
-2018-12-08 16:43:43,686 Sending Email process started
-2018-12-08 16:43:43,686 SendInvoiceEmail: Createing object
-2018-12-08 16:43:43,686 SendInvoiceEmail: object created success
-2018-12-08 16:43:43,687 SendInvoiceEmail: Enter in function send_mail for Airline: Indigo, GSTInvoice Number:OR1181909AE29842, PNR:HBMSJS.
-2018-12-08 16:43:45,561 Sending Email at address: desktop@hyberit.com
-2018-12-08 16:43:47,694 Email sent successfully
-2018-12-08 16:43:47,922 SendInvoiceEmail: Exiting from function send_mail
-2018-12-08 16:43:47,927 Starting new HTTPS connection (1): sheets.googleapis.com:443
-2018-12-08 16:43:48,939 https://sheets.googleapis.com:443 "PUT /v4/spreadsheets/1oQ4EOboX5z7AjyfHi2PivS7bh4tHUhZW8jeQJYmix70/values/BB16?valueInputOption=USER_ENTERED HTTP/1.1" 200 None
-2018-12-08 16:43:48,946 Starting new HTTPS connection (1): sheets.googleapis.com:443
-2018-12-08 16:43:50,752 https://sheets.googleapis.com:443 "PUT /v4/spreadsheets/1oQ4EOboX5z7AjyfHi2PivS7bh4tHUhZW8jeQJYmix70/values/BC16?valueInputOption=USER_ENTERED HTTP/1.1" 200 None
-2018-12-08 16:43:50,755 -----------------------------****----------------------------
-2018-12-08 16:43:50,756 Indigo_gst_extractor: IndigoGSTInvoice object created successfully for pnr FDMG7R origin: BLR
-2018-12-08 16:43:50,756 goair_gst_extractor: entering function get_invoice
-2018-12-08 16:43:50,756 goair_gst_extractor: Inside function get_invoice_html fetching page1
-2018-12-08 16:43:50,898 Starting new HTTPS connection (1): gst.goair.in:443
-2018-12-08 16:43:54,145 https://gst.goair.in:443 "GET /api/Info/SecurityCheck?PNR=FDMG7R&Origin=BLR HTTP/1.1" 200 None
-2018-12-08 16:43:54,148 goair_gst_extractor: Inside function get_invoice_html fetched page1 successful
-2018-12-08 16:43:54,149 GST status success 
-2018-12-08 16:43:54,151 Starting new HTTPS connection (1): gst.goair.in:443
-2018-12-08 16:44:03,772 https://gst.goair.in:443 "GET /Home/UrlAsPDF?invId=14017753%7CFDMG7R%7C2BF833C4531AEF1F0B5CD6B6D6B5A106633E5699CA08C64998D80F24F6A47DC8 HTTP/1.1" 200 94089
+2018-12-08 17:21:08,379 GST Invoice Automation Started..
+2018-12-08 17:21:08,397 Starting new HTTPS connection (1): sheets.googleapis.com:443
+2018-12-08 17:21:09,294 https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1oQ4EOboX5z7AjyfHi2PivS7bh4tHUhZW8jeQJYmix70/values/Sample HTTP/1.1" 401 None
+2018-12-08 17:21:09,297 Refreshing access_token
+2018-12-08 17:21:09,567 Starting new HTTPS connection (1): sheets.googleapis.com:443
+2018-12-08 17:21:10,413 https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1oQ4EOboX5z7AjyfHi2PivS7bh4tHUhZW8jeQJYmix70/values/Sample HTTP/1.1" 401 None
+2018-12-08 17:21:10,417 Refreshing access_token
+2018-12-08 17:21:10,621 Starting new HTTPS connection (1): sheets.googleapis.com:443
+2018-12-08 17:21:11,642 https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1oQ4EOboX5z7AjyfHi2PivS7bh4tHUhZW8jeQJYmix70/values/Sample HTTP/1.1" 200 None
+2018-12-08 17:21:11,670 Indigo_gst_extractor: IndigoGSTInvoice object created successfully for pnr ELZV4R
+2018-12-08 17:21:11,671 Indigo_gst_extractor: entering function get_invoice_html
+2018-12-08 17:21:11,671 Indigo_gst_extractor: Inside function get_invoice_html fetching page1
+2018-12-08 17:21:11,673 Starting new HTTPS connection (1): book.goindigo.in:443
+2018-12-08 17:21:21,575 https://book.goindigo.in:443 "POST /Booking/GSTInvoiceDetails HTTP/1.1" 200 63215
+2018-12-08 17:21:24,674 Indigo_gst_extractor: Inside function get_invoice_html fetched page1 successful
+2018-12-08 17:21:24,674 Indigo_gst_extractor: starting parsing with bs4 page1
+2018-12-08 17:21:24,818 Indigo_gst_extractor: parsing page1 completed
+2018-12-08 17:21:24,818 Indigo_gst_extractor: finding id 'GSTInvoiceForm' 
+2018-12-08 17:21:24,828 Indigo_gst_extractor: found id 'GSTInvoiceForm' successful 
+2018-12-08 17:21:24,829 Indigo_gst_extractor: extracted request token:FeaXXOhAkQN6i35jJCZ-mHs7AgIEGbnpdu-PZVbR9RNZY3qrfqTIqJv4n8tu7y24LAqULQOZqcNTtKZhvOLG9c2YZ4jiy6YlHY8e2ASp_D87U6XAh3-ksjZd0oT99AXQpruF0w2
+2018-12-08 17:21:24,844 Indigo_gst_extractor: extracted invoice Number:KA1181909BA63738
+2018-12-08 17:21:24,844 Indigo_gst_extractor: Inside function get_invoice_html fetching page2
+2018-12-08 17:21:24,846 Starting new HTTPS connection (1): book.goindigo.in:443
+2018-12-08 17:21:30,177 https://book.goindigo.in:443 "POST /Booking/GSTInvoice HTTP/1.1" 200 20221
+2018-12-08 17:21:30,181 Indigo_gst_extractor: Inside function get_invoice_html fetched page2 successful
+2018-12-08 17:21:30,181 Indigo_gst_extractor: starting parsing with bs4 page2
+2018-12-08 17:21:30,244 Indigo_gst_extractor: starting parsing page2 is completed
+2018-12-08 17:21:30,250 Indigo_gst_extractor: existing function get_invoice_html successfully
+2018-12-08 17:21:30,250 Indigo_gst_extractor: entering function get_pdf_data
+2018-12-08 17:21:35,887 Indigo_gst_extractor: existing function get_pdf_data successfully
+2018-12-08 17:21:35,888 status for Ticket No 6E-ELZV4R is success
+2018-12-08 17:21:35,888 Sending Email process started
+2018-12-08 17:21:35,889 SendInvoiceEmail: Createing object
+2018-12-08 17:21:35,889 SendInvoiceEmail: object created success
+2018-12-08 17:21:35,889 SendInvoiceEmail: Enter in function send_mail for Airline: Indigo, GSTInvoice Number:KA1181909BA63738, PNR:ELZV4R.
+2018-12-08 17:21:38,788 Sending Email at address: desktop@hyberit.com
+2018-12-08 17:21:41,031 Email sent successfully
+2018-12-08 17:21:41,258 SendInvoiceEmail: Exiting from function send_mail
+2018-12-08 17:21:41,262 Starting new HTTPS connection (1): sheets.googleapis.com:443
+2018-12-08 17:21:42,504 https://sheets.googleapis.com:443 "PUT /v4/spreadsheets/1oQ4EOboX5z7AjyfHi2PivS7bh4tHUhZW8jeQJYmix70/values/BB2?valueInputOption=USER_ENTERED HTTP/1.1" 200 None
+2018-12-08 17:21:42,509 Starting new HTTPS connection (1): sheets.googleapis.com:443
+2018-12-08 17:21:43,569 https://sheets.googleapis.com:443 "PUT /v4/spreadsheets/1oQ4EOboX5z7AjyfHi2PivS7bh4tHUhZW8jeQJYmix70/values/BC2?valueInputOption=USER_ENTERED HTTP/1.1" 200 None
+2018-12-08 17:21:43,572 -----------------------------****----------------------------
+2018-12-08 17:21:43,573 Indigo_gst_extractor: IndigoGSTInvoice object created successfully for pnr UCCZ3C
+2018-12-08 17:21:43,573 Indigo_gst_extractor: entering function get_invoice_html
+2018-12-08 17:21:43,573 Indigo_gst_extractor: Inside function get_invoice_html fetching page1
+2018-12-08 17:21:43,576 Starting new HTTPS connection (1): book.goindigo.in:443
+2018-12-08 17:21:50,144 https://book.goindigo.in:443 "POST /Booking/GSTInvoiceDetails HTTP/1.1" 200 63206
+2018-12-08 17:21:51,273 Indigo_gst_extractor: Inside function get_invoice_html fetched page1 successful
+2018-12-08 17:21:51,274 Indigo_gst_extractor: starting parsing with bs4 page1
+2018-12-08 17:21:51,415 Indigo_gst_extractor: parsing page1 completed
+2018-12-08 17:21:51,415 Indigo_gst_extractor: finding id 'GSTInvoiceForm' 
+2018-12-08 17:21:51,426 Indigo_gst_extractor: found id 'GSTInvoiceForm' successful 
+2018-12-08 17:21:51,427 Indigo_gst_extractor: extracted request token:Uaq1KliQDYy-jAYxkZBIGG6iL9lGAjH8rRXac7pCHwjYpnH8-uZom8OFTfB8Xy5T4dlcKP27bWOiR76Z7yYlW6cMJ-yES5puk_IEVkfcsBHV01tf8uxvrf-MFRWXAG-uYAd8lQ2
+2018-12-08 17:21:51,441 Indigo_gst_extractor: extracted invoice Number:KA1181909BA72616
+2018-12-08 17:21:51,442 Indigo_gst_extractor: Inside function get_invoice_html fetching page2
+2018-12-08 17:21:51,444 Starting new HTTPS connection (1): book.goindigo.in:443
+2018-12-08 17:21:54,956 https://book.goindigo.in:443 "POST /Booking/GSTInvoice HTTP/1.1" 200 20202
+2018-12-08 17:21:55,573 Indigo_gst_extractor: Inside function get_invoice_html fetched page2 successful
+2018-12-08 17:21:55,573 Indigo_gst_extractor: starting parsing with bs4 page2
+2018-12-08 17:21:55,640 Indigo_gst_extractor: starting parsing page2 is completed
+2018-12-08 17:21:55,647 Indigo_gst_extractor: existing function get_invoice_html successfully
+2018-12-08 17:21:55,647 Indigo_gst_extractor: entering function get_pdf_data
+2018-12-08 17:21:59,939 Indigo_gst_extractor: existing function get_pdf_data successfully
+2018-12-08 17:21:59,941 status for Ticket No 6E-UCCZ3C is success
+2018-12-08 17:21:59,941 Sending Email process started
+2018-12-08 17:21:59,941 SendInvoiceEmail: Createing object
+2018-12-08 17:21:59,941 SendInvoiceEmail: object created success
+2018-12-08 17:21:59,941 SendInvoiceEmail: Enter in function send_mail for Airline: Indigo, GSTInvoice Number:KA1181909BA72616, PNR:UCCZ3C.
+2018-12-08 17:22:01,632 Sending Email at address: desktop@hyberit.com
+2018-12-08 17:22:03,721 Email sent successfully
+2018-12-08 17:22:03,943 SendInvoiceEmail: Exiting from function send_mail
+2018-12-08 17:22:03,948 Starting new HTTPS connection (1): sheets.googleapis.com:443
+2018-12-08 17:22:04,889 https://sheets.googleapis.com:443 "PUT /v4/spreadsheets/1oQ4EOboX5z7AjyfHi2PivS7bh4tHUhZW8jeQJYmix70/values/BB3?valueInputOption=USER_ENTERED HTTP/1.1" 200 None
+2018-12-08 17:22:04,895 Starting new HTTPS connection (1): sheets.googleapis.com:443
+2018-12-08 17:22:05,788 https://sheets.googleapis.com:443 "PUT /v4/spreadsheets/1oQ4EOboX5z7AjyfHi2PivS7bh4tHUhZW8jeQJYmix70/values/BC3?valueInputOption=USER_ENTERED HTTP/1.1" 200 None
+2018-12-08 17:22:05,791 -----------------------------****----------------------------
+2018-12-08 17:22:05,792 Indigo_gst_extractor: IndigoGSTInvoice object created successfully for pnr LK6H7H
+2018-12-08 17:22:05,792 Indigo_gst_extractor: entering function get_invoice_html
+2018-12-08 17:22:05,792 Indigo_gst_extractor: Inside function get_invoice_html fetching page1
+2018-12-08 17:22:05,795 Starting new HTTPS connection (1): book.goindigo.in:443
+2018-12-08 17:22:12,673 https://book.goindigo.in:443 "POST /Booking/GSTInvoiceDetails HTTP/1.1" 200 63219
+2018-12-08 17:22:13,904 Indigo_gst_extractor: Inside function get_invoice_html fetched page1 successful
+2018-12-08 17:22:13,905 Indigo_gst_extractor: starting parsing with bs4 page1
+2018-12-08 17:22:14,083 Indigo_gst_extractor: parsing page1 completed
+2018-12-08 17:22:14,083 Indigo_gst_extractor: finding id 'GSTInvoiceForm' 
+2018-12-08 17:22:14,093 Indigo_gst_extractor: found id 'GSTInvoiceForm' successful 
+2018-12-08 17:22:14,094 Indigo_gst_extractor: extracted request token:Zpkd-2tAltS_D05yq1tCBJzTjcJen6f3OUiIJoryqn-e2S8G7ryVW6y8NJXxQQ7jTIlyOMg37KzkzLAsEkOLyh4F6kgiO1H5NCUQUmUHdrQ6gvUGnEV5PflFSygUFg-BaG47hw2
+2018-12-08 17:22:14,109 Indigo_gst_extractor: extracted invoice Number:GJ1181909AI66999
+2018-12-08 17:22:14,110 Indigo_gst_extractor: Inside function get_invoice_html fetching page2
+2018-12-08 17:22:14,112 Starting new HTTPS connection (1): book.goindigo.in:443
+2018-12-08 17:22:20,455 https://book.goindigo.in:443 "POST /Booking/GSTInvoice HTTP/1.1" 200 20241
+2018-12-08 17:22:22,504 Indigo_gst_extractor: Inside function get_invoice_html fetched page2 successful
+2018-12-08 17:22:22,504 Indigo_gst_extractor: starting parsing with bs4 page2
+2018-12-08 17:22:22,563 Indigo_gst_extractor: starting parsing page2 is completed
+2018-12-08 17:22:22,568 Indigo_gst_extractor: existing function get_invoice_html successfully
+2018-12-08 17:22:22,568 Indigo_gst_extractor: entering function get_pdf_data
+2018-12-08 17:22:28,015 Indigo_gst_extractor: existing function get_pdf_data successfully
+2018-12-08 17:22:28,016 status for Ticket No 6E-LK6H7H is success
+2018-12-08 17:22:28,017 Sending Email process started
+2018-12-08 17:22:28,017 SendInvoiceEmail: Createing object
+2018-12-08 17:22:28,017 SendInvoiceEmail: object created success
+2018-12-08 17:22:28,017 SendInvoiceEmail: Enter in function send_mail for Airline: Indigo, GSTInvoice Number:GJ1181909AI66999, PNR:LK6H7H.
+2018-12-08 17:22:30,091 Sending Email at address: desktop@hyberit.com
+2018-12-08 17:22:32,332 Email sent successfully
+2018-12-08 17:22:32,556 SendInvoiceEmail: Exiting from function send_mail
+2018-12-08 17:22:32,560 Starting new HTTPS connection (1): sheets.googleapis.com:443
+2018-12-08 17:22:33,563 https://sheets.googleapis.com:443 "PUT /v4/spreadsheets/1oQ4EOboX5z7AjyfHi2PivS7bh4tHUhZW8jeQJYmix70/values/BB7?valueInputOption=USER_ENTERED HTTP/1.1" 200 None
+2018-12-08 17:22:33,569 Starting new HTTPS connection (1): sheets.googleapis.com:443
+2018-12-08 17:22:34,509 https://sheets.googleapis.com:443 "PUT /v4/spreadsheets/1oQ4EOboX5z7AjyfHi2PivS7bh4tHUhZW8jeQJYmix70/values/BC7?valueInputOption=USER_ENTERED HTTP/1.1" 200 None
+2018-12-08 17:22:34,511 -----------------------------****----------------------------
+2018-12-08 17:22:34,512 Indigo_gst_extractor: IndigoGSTInvoice object created successfully for pnr XF6H5J
+2018-12-08 17:22:34,512 Indigo_gst_extractor: entering function get_invoice_html
+2018-12-08 17:22:34,512 Indigo_gst_extractor: Inside function get_invoice_html fetching page1
+2018-12-08 17:22:34,514 Starting new HTTPS connection (1): book.goindigo.in:443
+2018-12-08 17:22:41,759 https://book.goindigo.in:443 "POST /Booking/GSTInvoiceDetails HTTP/1.1" 200 63222
+2018-12-08 17:22:43,805 Indigo_gst_extractor: Inside function get_invoice_html fetched page1 successful
+2018-12-08 17:22:43,805 Indigo_gst_extractor: starting parsing with bs4 page1
+2018-12-08 17:22:43,947 Indigo_gst_extractor: parsing page1 completed
+2018-12-08 17:22:43,947 Indigo_gst_extractor: finding id 'GSTInvoiceForm' 
+2018-12-08 17:22:43,958 Indigo_gst_extractor: found id 'GSTInvoiceForm' successful 
+2018-12-08 17:22:43,958 Indigo_gst_extractor: extracted request token:wZCG6VEck5tXRyCG6TnmXcK-eU876mc0w28_BqImm7zOQ6gIK7H99dqaweNOutR3MdT6n0hn7rK6ZV5ZI5a0i4vK1E6yd8J7YMfTcOfeHfKDLtWKWKCFubSRyFvqyAhsNEqoNA2
+2018-12-08 17:22:43,975 Indigo_gst_extractor: extracted invoice Number:GJ1181909AI70336
+2018-12-08 17:22:43,975 Indigo_gst_extractor: Inside function get_invoice_html fetching page2
+2018-12-08 17:22:43,978 Starting new HTTPS connection (1): book.goindigo.in:443
+2018-12-08 17:22:48,827 https://book.goindigo.in:443 "POST /Booking/GSTInvoice HTTP/1.1" 200 20243
+2018-12-08 17:22:48,831 Indigo_gst_extractor: Inside function get_invoice_html fetched page2 successful
+2018-12-08 17:22:48,831 Indigo_gst_extractor: starting parsing with bs4 page2
+2018-12-08 17:22:48,892 Indigo_gst_extractor: starting parsing page2 is completed
+2018-12-08 17:22:48,897 Indigo_gst_extractor: existing function get_invoice_html successfully
+2018-12-08 17:22:48,897 Indigo_gst_extractor: entering function get_pdf_data
+2018-12-08 17:22:53,104 Indigo_gst_extractor: existing function get_pdf_data successfully
+2018-12-08 17:22:53,105 status for Ticket No 6E-XF6H5J is success
+2018-12-08 17:22:53,106 Sending Email process started
+2018-12-08 17:22:53,106 SendInvoiceEmail: Createing object
+2018-12-08 17:22:53,106 SendInvoiceEmail: object created success
+2018-12-08 17:22:53,106 SendInvoiceEmail: Enter in function send_mail for Airline: Indigo, GSTInvoice Number:GJ1181909AI70336, PNR:XF6H5J.
+2018-12-08 17:22:55,890 Sending Email at address: desktop@hyberit.com
+2018-12-08 17:22:58,150 Email sent successfully
+2018-12-08 17:22:58,377 SendInvoiceEmail: Exiting from function send_mail
+2018-12-08 17:22:58,383 Starting new HTTPS connection (1): sheets.googleapis.com:443
+2018-12-08 17:22:59,367 https://sheets.googleapis.com:443 "PUT /v4/spreadsheets/1oQ4EOboX5z7AjyfHi2PivS7bh4tHUhZW8jeQJYmix70/values/BB8?valueInputOption=USER_ENTERED HTTP/1.1" 200 None
+2018-12-08 17:22:59,372 Starting new HTTPS connection (1): sheets.googleapis.com:443
+2018-12-08 17:23:00,417 https://sheets.googleapis.com:443 "PUT /v4/spreadsheets/1oQ4EOboX5z7AjyfHi2PivS7bh4tHUhZW8jeQJYmix70/values/BC8?valueInputOption=USER_ENTERED HTTP/1.1" 200 None
+2018-12-08 17:23:00,420 -----------------------------****----------------------------
+2018-12-08 17:23:00,421 Indigo_gst_extractor: IndigoGSTInvoice object created successfully for pnr VYEDKL
+2018-12-08 17:23:00,421 Indigo_gst_extractor: entering function get_invoice_html
+2018-12-08 17:23:00,421 Indigo_gst_extractor: Inside function get_invoice_html fetching page1
+2018-12-08 17:23:00,426 Starting new HTTPS connection (1): book.goindigo.in:443
+2018-12-08 17:23:07,048 https://book.goindigo.in:443 "POST /Booking/GSTInvoiceDetails HTTP/1.1" 200 63036
+2018-12-08 17:23:09,814 Indigo_gst_extractor: Inside function get_invoice_html fetched page1 successful
+2018-12-08 17:23:09,815 Indigo_gst_extractor: starting parsing with bs4 page1
+2018-12-08 17:23:09,963 Indigo_gst_extractor: parsing page1 completed
+2018-12-08 17:23:09,963 Indigo_gst_extractor: finding id 'GSTInvoiceForm' 
+2018-12-08 17:23:09,974 Indigo_gst_extractor: found id 'GSTInvoiceForm' successful 
+2018-12-08 17:23:09,975 Indigo_gst_extractor: extracted request token:Js9_JJrYv5ZJOrjwh0vfJGLXM2afwJEgW0dtrpBxgbtXg9JLVzOWp_lafGbCvwGCRhszYBp6Phty0fHUglBNFEFdvLmMcbhqkdpB_JqDxyIMyqymkfKp5ROr6Wb213_of7Eg6g2
+2018-12-08 17:23:09,989 Indigo_gst_extractor: extracted invoice Number:GJ1181910AK16094
+2018-12-08 17:23:09,989 Indigo_gst_extractor: Inside function get_invoice_html fetching page2
+2018-12-08 17:23:09,992 Starting new HTTPS connection (1): book.goindigo.in:443
+2018-12-08 17:23:12,987 https://book.goindigo.in:443 "POST /Booking/GSTInvoice HTTP/1.1" 200 20164
+2018-12-08 17:23:13,302 Indigo_gst_extractor: Inside function get_invoice_html fetched page2 successful
+2018-12-08 17:23:13,302 Indigo_gst_extractor: starting parsing with bs4 page2
+2018-12-08 17:23:13,363 Indigo_gst_extractor: starting parsing page2 is completed
+2018-12-08 17:23:13,369 Indigo_gst_extractor: existing function get_invoice_html successfully
+2018-12-08 17:23:13,369 Indigo_gst_extractor: entering function get_pdf_data
+2018-12-08 17:23:16,860 Indigo_gst_extractor: existing function get_pdf_data successfully
+2018-12-08 17:23:16,861 status for Ticket No 6E-VYEDKL is success
+2018-12-08 17:23:16,861 Sending Email process started
+2018-12-08 17:23:16,861 SendInvoiceEmail: Createing object
+2018-12-08 17:23:16,861 SendInvoiceEmail: object created success
+2018-12-08 17:23:16,861 SendInvoiceEmail: Enter in function send_mail for Airline: Indigo, GSTInvoice Number:GJ1181910AK16094, PNR:VYEDKL.
+2018-12-08 17:23:18,827 Sending Email at address: desktop@hyberit.com
+2018-12-08 17:23:20,973 Email sent successfully
+2018-12-08 17:23:21,202 SendInvoiceEmail: Exiting from function send_mail
+2018-12-08 17:23:21,207 Starting new HTTPS connection (1): sheets.googleapis.com:443
+2018-12-08 17:23:22,115 https://sheets.googleapis.com:443 "PUT /v4/spreadsheets/1oQ4EOboX5z7AjyfHi2PivS7bh4tHUhZW8jeQJYmix70/values/BB10?valueInputOption=USER_ENTERED HTTP/1.1" 200 None
+2018-12-08 17:23:22,121 Starting new HTTPS connection (1): sheets.googleapis.com:443
+2018-12-08 17:23:23,029 https://sheets.googleapis.com:443 "PUT /v4/spreadsheets/1oQ4EOboX5z7AjyfHi2PivS7bh4tHUhZW8jeQJYmix70/values/BC10?valueInputOption=USER_ENTERED HTTP/1.1" 200 None
+2018-12-08 17:23:23,032 -----------------------------****----------------------------
+2018-12-08 17:23:23,033 Indigo_gst_extractor: IndigoGSTInvoice object created successfully for pnr VYEDKL
+2018-12-08 17:23:23,033 Indigo_gst_extractor: entering function get_invoice_html
+2018-12-08 17:23:23,033 Indigo_gst_extractor: Inside function get_invoice_html fetching page1
+2018-12-08 17:23:23,036 Starting new HTTPS connection (1): book.goindigo.in:443
+2018-12-08 17:23:30,395 https://book.goindigo.in:443 "POST /Booking/GSTInvoiceDetails HTTP/1.1" 200 63147
+2018-12-08 17:23:31,627 Indigo_gst_extractor: Inside function get_invoice_html fetched page1 successful
+2018-12-08 17:23:31,628 Indigo_gst_extractor: starting parsing with bs4 page1
+2018-12-08 17:23:31,770 Indigo_gst_extractor: parsing page1 completed
+2018-12-08 17:23:31,770 Indigo_gst_extractor: finding id 'GSTInvoiceForm' 
+2018-12-08 17:23:31,781 Indigo_gst_extractor: found id 'GSTInvoiceForm' successful 
+2018-12-08 17:23:31,782 Indigo_gst_extractor: extracted request token:clo7ezNs5LVvRJUIZ72q7SPFwexI69L_ZqewvFb4zDX3GiTDOtEYKiqLkiwy7AKe3-zq_xo6miUwZRNLF6jU8rc7l0oFM7IwaM1hLBHesungsiNUxbswUQ5bPDiqvSzcwCuKiQ2
+2018-12-08 17:23:31,796 Indigo_gst_extractor: extracted invoice Number:GJ1181910AK16094
+2018-12-08 17:23:31,796 Indigo_gst_extractor: Inside function get_invoice_html fetching page2
+2018-12-08 17:23:31,799 Starting new HTTPS connection (1): book.goindigo.in:443
+2018-12-08 17:23:35,192 https://book.goindigo.in:443 "POST /Booking/GSTInvoice HTTP/1.1" 200 20166
+2018-12-08 17:23:35,196 Indigo_gst_extractor: Inside function get_invoice_html fetched page2 successful
+2018-12-08 17:23:35,196 Indigo_gst_extractor: starting parsing with bs4 page2
+2018-12-08 17:23:35,260 Indigo_gst_extractor: starting parsing page2 is completed
+2018-12-08 17:23:35,265 Indigo_gst_extractor: existing function get_invoice_html successfully
+2018-12-08 17:23:35,265 Indigo_gst_extractor: entering function get_pdf_data
+2018-12-08 17:23:40,618 Indigo_gst_extractor: existing function get_pdf_data successfully
+2018-12-08 17:23:40,620 status for Ticket No 6E-VYEDKL is success
+2018-12-08 17:23:40,620 Sending Email process started
+2018-12-08 17:23:40,620 SendInvoiceEmail: Createing object
+2018-12-08 17:23:40,620 SendInvoiceEmail: object created success
+2018-12-08 17:23:40,620 SendInvoiceEmail: Enter in function send_mail for Airline: Indigo, GSTInvoice Number:GJ1181910AK16094, PNR:VYEDKL.
+2018-12-08 17:23:42,280 Sending Email at address: desktop@hyberit.com
+2018-12-08 17:23:44,423 Email sent successfully
+2018-12-08 17:23:44,642 SendInvoiceEmail: Exiting from function send_mail
+2018-12-08 17:23:44,647 Starting new HTTPS connection (1): sheets.googleapis.com:443
+2018-12-08 17:23:45,585 https://sheets.googleapis.com:443 "PUT /v4/spreadsheets/1oQ4EOboX5z7AjyfHi2PivS7bh4tHUhZW8jeQJYmix70/values/BB11?valueInputOption=USER_ENTERED HTTP/1.1" 200 None
+2018-12-08 17:23:45,592 Starting new HTTPS connection (1): sheets.googleapis.com:443
+2018-12-08 17:23:46,541 https://sheets.googleapis.com:443 "PUT /v4/spreadsheets/1oQ4EOboX5z7AjyfHi2PivS7bh4tHUhZW8jeQJYmix70/values/BC11?valueInputOption=USER_ENTERED HTTP/1.1" 200 None
+2018-12-08 17:23:46,543 -----------------------------****----------------------------
+2018-12-08 17:23:46,544 Indigo_gst_extractor: IndigoGSTInvoice object created successfully for pnr Q6TBFF
+2018-12-08 17:23:46,544 Indigo_gst_extractor: entering function get_invoice_html
+2018-12-08 17:23:46,544 Indigo_gst_extractor: Inside function get_invoice_html fetching page1
+2018-12-08 17:23:46,546 Starting new HTTPS connection (1): book.goindigo.in:443
+2018-12-08 17:23:55,893 https://book.goindigo.in:443 "POST /Booking/GSTInvoiceDetails HTTP/1.1" 200 62730
+2018-12-08 17:23:59,287 Indigo_gst_extractor: Inside function get_invoice_html fetched page1 successful
+2018-12-08 17:23:59,287 GST Invoice is not Generated till now for booking_reference_number:Q6TBFF
+2018-12-08 17:23:59,288 status for Ticket No SG-Q6TBFF is waiting
+2018-12-08 17:23:59,290 Starting new HTTPS connection (1): sheets.googleapis.com:443
+2018-12-08 17:24:00,296 https://sheets.googleapis.com:443 "PUT /v4/spreadsheets/1oQ4EOboX5z7AjyfHi2PivS7bh4tHUhZW8jeQJYmix70/values/BB13?valueInputOption=USER_ENTERED HTTP/1.1" 200 None
+2018-12-08 17:24:00,301 Starting new HTTPS connection (1): sheets.googleapis.com:443
+2018-12-08 17:24:01,216 https://sheets.googleapis.com:443 "PUT /v4/spreadsheets/1oQ4EOboX5z7AjyfHi2PivS7bh4tHUhZW8jeQJYmix70/values/BC13?valueInputOption=USER_ENTERED HTTP/1.1" 200 None
+2018-12-08 17:24:01,219 -----------------------------****----------------------------
+2018-12-08 17:24:01,219 Indigo_gst_extractor: IndigoGSTInvoice object created successfully for pnr Q6TBFF
+2018-12-08 17:24:01,219 Indigo_gst_extractor: entering function get_invoice_html
+2018-12-08 17:24:01,219 Indigo_gst_extractor: Inside function get_invoice_html fetching page1
+2018-12-08 17:24:01,222 Starting new HTTPS connection (1): book.goindigo.in:443
+2018-12-08 17:24:09,307 https://book.goindigo.in:443 "POST /Booking/GSTInvoiceDetails HTTP/1.1" 200 62827
+2018-12-08 17:24:12,689 Indigo_gst_extractor: Inside function get_invoice_html fetched page1 successful
+2018-12-08 17:24:12,690 GST Invoice is not Generated till now for booking_reference_number:Q6TBFF
+2018-12-08 17:24:12,690 status for Ticket No SG-Q6TBFF is waiting
+2018-12-08 17:24:12,693 Starting new HTTPS connection (1): sheets.googleapis.com:443
+2018-12-08 17:24:13,812 https://sheets.googleapis.com:443 "PUT /v4/spreadsheets/1oQ4EOboX5z7AjyfHi2PivS7bh4tHUhZW8jeQJYmix70/values/BB14?valueInputOption=USER_ENTERED HTTP/1.1" 200 None
+2018-12-08 17:24:13,817 Starting new HTTPS connection (1): sheets.googleapis.com:443
+2018-12-08 17:24:14,837 https://sheets.googleapis.com:443 "PUT /v4/spreadsheets/1oQ4EOboX5z7AjyfHi2PivS7bh4tHUhZW8jeQJYmix70/values/BC14?valueInputOption=USER_ENTERED HTTP/1.1" 200 None
+2018-12-08 17:24:14,839 -----------------------------****----------------------------
+2018-12-08 17:24:14,840 Indigo_gst_extractor: IndigoGSTInvoice object created successfully for pnr HBMSJS
+2018-12-08 17:24:14,840 Indigo_gst_extractor: entering function get_invoice_html
+2018-12-08 17:24:14,840 Indigo_gst_extractor: Inside function get_invoice_html fetching page1
+2018-12-08 17:24:14,843 Starting new HTTPS connection (1): book.goindigo.in:443
+2018-12-08 17:24:22,517 https://book.goindigo.in:443 "POST /Booking/GSTInvoiceDetails HTTP/1.1" 200 63198
+2018-12-08 17:24:24,067 Indigo_gst_extractor: Inside function get_invoice_html fetched page1 successful
+2018-12-08 17:24:24,067 Indigo_gst_extractor: starting parsing with bs4 page1
+2018-12-08 17:24:24,213 Indigo_gst_extractor: parsing page1 completed
+2018-12-08 17:24:24,213 Indigo_gst_extractor: finding id 'GSTInvoiceForm' 
+2018-12-08 17:24:24,224 Indigo_gst_extractor: found id 'GSTInvoiceForm' successful 
+2018-12-08 17:24:24,225 Indigo_gst_extractor: extracted request token:9NxW447NsO8Mjdy5Ar0KwIsYqT5_PqygOnwgMDAL78VRy5sdQyBu7p-wKVsjk_-AaErdqCSZ8Kt-a7pTqAHNA9mvyp0jPpwFTy7OEhRReOixcayMfW3nEizAHOAUkqr3PVBvqg2
+2018-12-08 17:24:24,239 Indigo_gst_extractor: extracted invoice Number:OR1181909AE29842
+2018-12-08 17:24:24,239 Indigo_gst_extractor: Inside function get_invoice_html fetching page2
+2018-12-08 17:24:24,242 Starting new HTTPS connection (1): book.goindigo.in:443
+2018-12-08 17:24:27,125 https://book.goindigo.in:443 "POST /Booking/GSTInvoice HTTP/1.1" 200 20348
+2018-12-08 17:24:27,434 Indigo_gst_extractor: Inside function get_invoice_html fetched page2 successful
+2018-12-08 17:24:27,434 Indigo_gst_extractor: starting parsing with bs4 page2
+2018-12-08 17:24:27,548 Indigo_gst_extractor: starting parsing page2 is completed
+2018-12-08 17:24:27,554 Indigo_gst_extractor: existing function get_invoice_html successfully
+2018-12-08 17:24:27,554 Indigo_gst_extractor: entering function get_pdf_data
+2018-12-08 17:24:33,254 Indigo_gst_extractor: existing function get_pdf_data successfully
+2018-12-08 17:24:33,255 status for Ticket No 6E-HBMSJS is success
+2018-12-08 17:24:33,256 Sending Email process started
+2018-12-08 17:24:33,256 SendInvoiceEmail: Createing object
+2018-12-08 17:24:33,256 SendInvoiceEmail: object created success
+2018-12-08 17:24:33,256 SendInvoiceEmail: Enter in function send_mail for Airline: Indigo, GSTInvoice Number:OR1181909AE29842, PNR:HBMSJS.
+2018-12-08 17:24:34,912 Sending Email at address: desktop@hyberit.com
+2018-12-08 17:24:37,159 Email sent successfully
+2018-12-08 17:24:37,388 SendInvoiceEmail: Exiting from function send_mail
+2018-12-08 17:24:37,393 Starting new HTTPS connection (1): sheets.googleapis.com:443
+2018-12-08 17:24:38,312 https://sheets.googleapis.com:443 "PUT /v4/spreadsheets/1oQ4EOboX5z7AjyfHi2PivS7bh4tHUhZW8jeQJYmix70/values/BB17?valueInputOption=USER_ENTERED HTTP/1.1" 200 None
+2018-12-08 17:24:38,319 Starting new HTTPS connection (1): sheets.googleapis.com:443
+2018-12-08 17:24:39,332 https://sheets.googleapis.com:443 "PUT /v4/spreadsheets/1oQ4EOboX5z7AjyfHi2PivS7bh4tHUhZW8jeQJYmix70/values/BC17?valueInputOption=USER_ENTERED HTTP/1.1" 200 None
+2018-12-08 17:24:39,335 -----------------------------****----------------------------
+2018-12-08 17:24:39,336 Indigo_gst_extractor: IndigoGSTInvoice object created successfully for pnr FDMG7R origin: BLR
+2018-12-08 17:24:39,336 goair_gst_extractor: entering function get_invoice
+2018-12-08 17:24:39,336 goair_gst_extractor: Inside function get_invoice_html fetching page1
+2018-12-08 17:24:39,440 Starting new HTTPS connection (1): gst.goair.in:443
+2018-12-08 17:24:42,352 https://gst.goair.in:443 "GET /api/Info/SecurityCheck?PNR=FDMG7R&Origin=BLR HTTP/1.1" 200 None
+2018-12-08 17:24:42,355 goair_gst_extractor: Inside function get_invoice_html fetched page1 successful
+2018-12-08 17:24:42,355 GST status success 
+2018-12-08 17:24:42,358 Starting new HTTPS connection (1): gst.goair.in:443
+2018-12-08 17:24:44,328 https://gst.goair.in:443 "GET /Home/UrlAsPDF?invId=14017753%7CFDMG7R%7C2BF833C4531AEF1F0B5CD6B6D6B5A106633E5699CA08C64998D80F24F6A47DC8 HTTP/1.1" 200 94089
+2018-12-08 17:24:44,504 storing Go Air_FDMG7R_2913438991FDMG7R.pdf pdf file
+2018-12-08 17:24:44,505 goair_gst_extractor: entering function get_invoice
+2018-12-08 17:24:44,505 status for Ticket No G8-FDMG7R is success
+2018-12-08 17:24:44,505 Sending Email process started
+2018-12-08 17:24:44,505 SendInvoiceEmail: Createing object
+2018-12-08 17:24:44,505 SendInvoiceEmail: object created success
+2018-12-08 17:24:44,505 SendInvoiceEmail: Enter in function send_mail for Airline: Go Air, GSTInvoice Number:2913438991FDMG7R, PNR:FDMG7R.
+2018-12-08 17:24:46,280 Sending Email at address: desktop@hyberit.com
+2018-12-08 17:24:48,833 Email sent successfully
+2018-12-08 17:24:49,103 SendInvoiceEmail: Exiting from function send_mail
+2018-12-08 17:24:49,106 Starting new HTTPS connection (1): sheets.googleapis.com:443
+2018-12-08 17:24:50,062 https://sheets.googleapis.com:443 "PUT /v4/spreadsheets/1oQ4EOboX5z7AjyfHi2PivS7bh4tHUhZW8jeQJYmix70/values/BB18?valueInputOption=USER_ENTERED HTTP/1.1" 200 None
+2018-12-08 17:24:50,069 Starting new HTTPS connection (1): sheets.googleapis.com:443
+2018-12-08 17:24:51,086 https://sheets.googleapis.com:443 "PUT /v4/spreadsheets/1oQ4EOboX5z7AjyfHi2PivS7bh4tHUhZW8jeQJYmix70/values/BC18?valueInputOption=USER_ENTERED HTTP/1.1" 200 None
+2018-12-08 17:24:51,088 -----------------------------****----------------------------
+2018-12-08 17:24:51,089 Indigo_gst_extractor: IndigoGSTInvoice object created successfully for pnr N6K45Z origin: BLR
+2018-12-08 17:24:51,089 goair_gst_extractor: entering function get_invoice
+2018-12-08 17:24:51,089 goair_gst_extractor: Inside function get_invoice_html fetching page1
+2018-12-08 17:24:51,091 Starting new HTTPS connection (1): gst.goair.in:443
+2018-12-08 17:24:53,860 https://gst.goair.in:443 "GET /api/Info/SecurityCheck?PNR=N6K45Z&Origin=BLR HTTP/1.1" 200 None
+2018-12-08 17:24:53,863 goair_gst_extractor: Inside function get_invoice_html fetched page1 successful
+2018-12-08 17:24:53,863 GST status success 
+2018-12-08 17:24:53,866 Starting new HTTPS connection (1): gst.goair.in:443
+2018-12-08 17:24:56,923 https://gst.goair.in:443 "GET /Home/UrlAsPDF?invId=14164149%7CN6K45Z%7CC239086615C038C13E028B5D05E9A825A489D83DC200693DA243AA14E4680DB7 HTTP/1.1" 200 94315
+2018-12-08 17:24:57,518 storing Go Air_N6K45Z_2913556080N6K45Z.pdf pdf file
+2018-12-08 17:24:57,518 goair_gst_extractor: entering function get_invoice
+2018-12-08 17:24:57,519 status for Ticket No G8-N6K45Z is success
+2018-12-08 17:24:57,519 Sending Email process started
+2018-12-08 17:24:57,519 SendInvoiceEmail: Createing object
+2018-12-08 17:24:57,519 SendInvoiceEmail: object created success
+2018-12-08 17:24:57,519 SendInvoiceEmail: Enter in function send_mail for Airline: Go Air, GSTInvoice Number:2913556080N6K45Z, PNR:N6K45Z.
+2018-12-08 17:24:59,182 Sending Email at address: desktop@hyberit.com
+2018-12-08 17:25:01,735 Email sent successfully
+2018-12-08 17:25:01,957 SendInvoiceEmail: Exiting from function send_mail
+2018-12-08 17:25:01,961 Starting new HTTPS connection (1): sheets.googleapis.com:443
+2018-12-08 17:25:02,555 https://sheets.googleapis.com:443 "PUT /v4/spreadsheets/1oQ4EOboX5z7AjyfHi2PivS7bh4tHUhZW8jeQJYmix70/values/BB19?valueInputOption=USER_ENTERED HTTP/1.1" 200 None
+2018-12-08 17:25:02,560 Starting new HTTPS connection (1): sheets.googleapis.com:443
+2018-12-08 17:25:03,462 https://sheets.googleapis.com:443 "PUT /v4/spreadsheets/1oQ4EOboX5z7AjyfHi2PivS7bh4tHUhZW8jeQJYmix70/values/BC19?valueInputOption=USER_ENTERED HTTP/1.1" 200 None
+2018-12-08 17:25:03,465 -----------------------------****----------------------------
+2018-12-08 17:25:03,466 Indigo_gst_extractor: IndigoGSTInvoice object created successfully for pnr Z53CJF origin: BLR
+2018-12-08 17:25:03,466 goair_gst_extractor: entering function get_invoice
+2018-12-08 17:25:03,466 goair_gst_extractor: Inside function get_invoice_html fetching page1
+2018-12-08 17:25:03,469 Starting new HTTPS connection (1): gst.goair.in:443
+2018-12-08 17:25:08,290 https://gst.goair.in:443 "GET /api/Info/SecurityCheck?PNR=Z53CJF&Origin=BLR HTTP/1.1" 200 None
+2018-12-08 17:25:08,293 goair_gst_extractor: Inside function get_invoice_html fetched page1 successful
+2018-12-08 17:25:08,293 GST status success 
+2018-12-08 17:25:08,296 Starting new HTTPS connection (1): gst.goair.in:443
+2018-12-08 17:25:10,242 https://gst.goair.in:443 "GET /Home/UrlAsPDF?invId=14866906%7CZ53CJF%7CE69DA1EC85DC8F37BCF5D5142442D250F5254D915284D248EEE62E41623E54E9 HTTP/1.1" 200 93733
+2018-12-08 17:25:10,412 storing Go Air_Z53CJF_2914256155Z53CJF.pdf pdf file
+2018-12-08 17:25:10,413 goair_gst_extractor: entering function get_invoice
+2018-12-08 17:25:10,413 status for Ticket No G8-Z53CJF is success
+2018-12-08 17:25:10,414 Sending Email process started
+2018-12-08 17:25:10,414 SendInvoiceEmail: Createing object
+2018-12-08 17:25:10,414 SendInvoiceEmail: object created success
+2018-12-08 17:25:10,414 SendInvoiceEmail: Enter in function send_mail for Airline: Go Air, GSTInvoice Number:2914256155Z53CJF, PNR:Z53CJF.
+2018-12-08 17:25:12,057 Sending Email at address: desktop@hyberit.com
+2018-12-08 17:25:14,460 Email sent successfully
+2018-12-08 17:25:14,711 SendInvoiceEmail: Exiting from function send_mail
+2018-12-08 17:25:14,714 Starting new HTTPS connection (1): sheets.googleapis.com:443
+2018-12-08 17:25:15,254 https://sheets.googleapis.com:443 "PUT /v4/spreadsheets/1oQ4EOboX5z7AjyfHi2PivS7bh4tHUhZW8jeQJYmix70/values/BB20?valueInputOption=USER_ENTERED HTTP/1.1" 200 None
+2018-12-08 17:25:15,259 Starting new HTTPS connection (1): sheets.googleapis.com:443
+2018-12-08 17:25:16,175 https://sheets.googleapis.com:443 "PUT /v4/spreadsheets/1oQ4EOboX5z7AjyfHi2PivS7bh4tHUhZW8jeQJYmix70/values/BC20?valueInputOption=USER_ENTERED HTTP/1.1" 200 None
+2018-12-08 17:25:16,177 -----------------------------****----------------------------
+2018-12-08 17:25:16,178 Indigo_gst_extractor: IndigoGSTInvoice object created successfully for pnr J7S64G  origin: BLR
+2018-12-08 17:25:16,178 goair_gst_extractor: entering function get_invoice
+2018-12-08 17:25:16,178 goair_gst_extractor: Inside function get_invoice_html fetching page1
+2018-12-08 17:25:16,180 Starting new HTTPS connection (1): gst.goair.in:443
+2018-12-08 17:25:20,686 https://gst.goair.in:443 "GET /api/Info/SecurityCheck?PNR=J7S64G+&Origin=BLR HTTP/1.1" 200 None
+2018-12-08 17:25:20,689 goair_gst_extractor: Inside function get_invoice_html fetched page1 successful
+2018-12-08 17:25:20,689 GST status success 
+2018-12-08 17:25:20,691 Starting new HTTPS connection (1): gst.goair.in:443
+2018-12-08 17:25:22,523 https://gst.goair.in:443 "GET /Home/UrlAsPDF?invId=15124667%7CJ7S64G%7CB0DF26518A3281F933F0C1180BB8BC1E9A6113CB7A4B81F1F82D24B4E52F1C67 HTTP/1.1" 200 94312
